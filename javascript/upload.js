@@ -99,7 +99,7 @@ formUpload.addEventListener(
         new FormData(formUpload);
 
       const response = await fetch(
-        'http://localhost:3000/falta/importar-faltas',
+        'backgestper-production.up.railway.app/falta/importar-faltas',
         {
           method: 'POST',
           body: formData
@@ -217,7 +217,7 @@ btnEmail.addEventListener(
 
 
       const response = await fetch(
-        'http://localhost:3000/email/send-emails',
+        'backgestper-production.up.railway.app/email/send-emails',
         {
           method: 'POST',
 
