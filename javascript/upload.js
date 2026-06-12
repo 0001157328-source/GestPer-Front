@@ -199,7 +199,7 @@ btnEmail.addEventListener(
         alert(
           'Nenhum aluno encontrado.'
         );
-
+''
         return;
       }
 
