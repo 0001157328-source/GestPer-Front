@@ -3,7 +3,7 @@ let usuarioEditandoId = null;
 // ===================== LISTAR =====================
 async function listarUsuarios() {
   try {
-    const resposta = await fetch("backgestper-production.up.railway.app/usuario", {
+    const resposta = await fetch("https://backgestper-production.up.railway.app/usuario", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -111,7 +111,7 @@ async function alterar_usuario() {
 // ===================== DELETAR =====================
 async function deletar_usuario(id) {
   try {
-    await fetch(`backgestper-production.up.railway.app/usuario/${id}`, {
+    await fetch(`https://backgestper-production.up.railway.app/usuario/${id}`, {
       method: "DELETE",
     });
 
@@ -143,7 +143,7 @@ async function adicionarUsuario() {
       return;
     }
 
-    const resposta = await fetch("backgestper-production.up.railway.app/usuario", {
+    const resposta = await fetch("https://backgestper-production.up.railway.app/usuario", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
