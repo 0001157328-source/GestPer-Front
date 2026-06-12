@@ -75,7 +75,7 @@ async function alterar_usuario() {
     const senha = document.getElementById("editar-senha").value.trim();
 
     const resposta = await fetch(
-      `backgestper-production.up.railway.app/usuario/${usuarioEditandoId}`,
+      `https://backgestper-production.up.railway.app/usuario/${usuarioEditandoId}`,
       {
         method: "PUT",
         headers: {
