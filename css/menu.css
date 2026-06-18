@@ -505,3 +505,21 @@ body{
     font-size:13px;
   }
 }
+#splash h1 {
+  margin-top: 20px;
+  font-family: 'Inter', sans-serif;
+}
+/* Nova área ilustrativa do login */
+.login-decoration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 60px;
+  max-width: 420px;
+}
+
+.login-decoration img {
+  width: 100%;
+  max-width: 380px;
+  filter: drop-shadow(0 20px 30px rgba(37,99,235,0.15));
+}

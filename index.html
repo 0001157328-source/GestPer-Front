@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head> 
+<head>
 
     <!-- Configurações do PWA -->
-<link rel="manifest" href="manifest.json" />
-<meta name="theme-color" content="#0d6efd" />
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#0d6efd" />
 
-<!-- Tags para funcionar no iPhone (iOS) -->
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<meta name="apple-mobile-web-app-status-bar-style" content="default" />
-<meta name="apple-mobile-web-app-title" content="GestPer" />
+    <!-- Tags para funcionar no iPhone (iOS) -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="GestPer" />
 
-<!-- Ícones -->
-<link rel="apple-touch-icon" href="images/icon-192.png" />
-<link rel="icon" type="image/png" href="images/icon-192.png" />
+    <!-- Ícones -->
+    <link rel="apple-touch-icon" href="images/icon-192.png" />
+    <link rel="icon" type="image/png" href="images/icon-192.png" />
 
 
     <meta charset='utf-8'>
@@ -26,6 +26,14 @@
 
 <body>
 
+    <div id="splash">
+        <img src="images/icon-512.png" alt="Gestão de Permanência">
+        <h1> GestPer </h1>
+        <p>Gestão de Permanência</p>
+
+
+
+    </div>
     <div class="background-glow"></div>
 
     <div class="login-wrapper">
@@ -52,11 +60,7 @@
                 <div class="input-area">
                     <span class="input-icon">✉</span>
 
-                    <input
-                        type="email"
-                        id="email"
-                        placeholder="Digite o seu email"
-                    >
+                    <input type="email" id="email" placeholder="Digite o seu email">
                 </div>
             </div>
 
@@ -66,11 +70,7 @@
                 <div class="input-area">
                     <span class="input-icon">🔒</span>
 
-                    <input
-                        type="password"
-                        id="password"
-                        placeholder="Digite sua senha"
-                    >
+                    <input type="password" id="password" placeholder="Digite sua senha">
                 </div>
             </div>
 
@@ -98,6 +98,20 @@
                 .then(() => console.log('Pronto! Seu site agora é um App.'))
                 .catch((err) => console.log('Erro ao criar o App:', err));
         }
+        
+        window.addEventListener('load', () => {
+            const splash = document.getElementById('splash');
+        
+            setTimeout(() => {
+                splash.style.opacity = '0';
+                splash.style.transition = 'opacity 0.5s ease';
+        
+                setTimeout(() => {
+                    splash.style.display = 'none';
+                }, 500);
+        
+            }, 3000);
+        });
         </script>
 
 </body>
