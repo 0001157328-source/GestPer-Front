@@ -46,6 +46,9 @@ body {
 /* ========================================
    BODY
 ======================================== */
+/* ========================================
+   BODY
+======================================== */
 body {
   margin: 0;
 
@@ -67,10 +70,11 @@ body {
 
   position: relative;
 
-  body {
-    padding:
-      env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
-  }
+  padding:
+    env(safe-area-inset-top)
+    env(safe-area-inset-right)
+    env(safe-area-inset-bottom)
+    env(safe-area-inset-left);
 }
 
 /* ========================================
@@ -459,4 +463,12 @@ button:hover {
 #splash p {
   margin-top: 10px;
   color: #cbd5e1;
+}
+
+html{
+  background:#07111f;
+}
+
+body{
+  background:#07111f;
 }
